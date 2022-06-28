@@ -1,0 +1,10 @@
+apiVersion: v1 
+kind: ConfigMap
+metadata:
+  name: personmgmt-dbcreation-script
+data:
+  mysql_usermgmt.sql: |
+    DROP DATABASE IF EXISTS personappdb;
+    CREATE DATABASE personappdb;
+
+#this config map you can compare the same as user data. 
